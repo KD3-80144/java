@@ -1,0 +1,53 @@
+package com.tester;
+import com.app.fruits.*;
+import java.util.Scanner;
+
+public class FruitBasket 
+{
+
+	public static void main(String[] args) 
+	{
+		int choice;
+		int index=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of your baket:");
+		int size=sc.nextInt();
+		Fruits []fruits=new Fruits[size];
+		do 
+		{
+			System.out.println("0.To Exit");
+			System.out.println("1.To Add Apple");
+			System.out.println("2.To Add Mango");
+			System.out.println("3.To Add Orange");
+			choice=sc.nextInt();
+			
+			switch (choice) 
+			{
+			case 1:
+				fruits[index]=new Apple();
+				fruits[index].add();
+				index++;
+				break;
+			case 2:
+				fruits[index]=new Mango();
+				fruits[index].add();
+				index++;
+				break;
+			case 3:
+				fruits[index]=new Orange();
+				fruits[index].add();
+				index++;
+				break;	
+			case 4:
+				for(Fruits fru:fruits)
+					fru.getName();
+				break;	
+			default:
+				break;
+			}	
+		} while (true);
+		
+
+	}
+
+}

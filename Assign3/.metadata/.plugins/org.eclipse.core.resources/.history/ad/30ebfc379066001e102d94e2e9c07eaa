@@ -1,0 +1,27 @@
+package com.sunbeam.creaditcalculator;
+
+public class CreditCal 
+{
+  private int accountNo=10001;
+  private int monthBegnBal=100000;
+  private int totalExpenses;
+  private int allowedCreditLimit=150000;
+  private int chargesApplied=10000;
+  
+  
+  
+public CreditCal(int totalExpenses)
+{
+	
+	this.totalExpenses = totalExpenses;
+}
+
+
+
+public void calNewBalance()
+{
+	int total=this.monthBegnBal+this.totalExpenses-chargesApplied;
+	System.out.println("New Balance:"+total);
+} 
+  
+}

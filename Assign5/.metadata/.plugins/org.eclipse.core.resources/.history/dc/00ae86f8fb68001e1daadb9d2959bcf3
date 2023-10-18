@@ -1,0 +1,56 @@
+package com.rutvikjavaprograms;
+
+import java.util.Scanner;
+
+public class CommissionEemployee extends Employees implements EmployeeInterFace
+{
+  private double grossSales;
+  private double commissionRate;
+  Scanner sc = new Scanner(System.in);
+ 
+  public CommissionEemployee() 
+  {
+  	super();
+  }
+public CommissionEemployee(String firstName, String lastName, int socialSecurityNumber,double grossSales, double commissionRate) 
+{
+	super(firstName,lastName,socialSecurityNumber);
+	this.grossSales = grossSales;
+	this.commissionRate = commissionRate;
+}
+
+public double getGrossSales() 
+{
+	return grossSales;
+}
+public void setGrossSales(double grossSales) 
+{
+	this.grossSales = grossSales;
+}
+public double getCommissionRate() 
+{
+	return commissionRate;
+}
+public void setCommissionRate(double commissionRate) 
+{
+	this.commissionRate = commissionRate;
+}
+public void accept()
+{
+	System.out.println("Enter your gross sales:");
+	this.grossSales=sc.nextDouble();
+	System.out.println("Enter comission:");
+	this.commissionRate=sc.nextDouble();
+}
+public void display()
+{
+    System.out.println("Gross Sales:"+this.grossSales);
+    System.out.println("Comission rate:"+this.commissionRate);
+}
+public void calTotSal()
+{
+	double totalSal=(this.grossSales*this.commissionRate)+(this.grossSales*this.commissionRate)*1.1;
+	System.out.println("Total salary:"+totalSal);
+}
+  
+}

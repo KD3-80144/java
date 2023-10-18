@@ -1,0 +1,17 @@
+package com.rutvikjavaprograms;
+
+public class TesterEmployee 
+{
+
+	public static void main(String[] args) 
+	{
+		Employees emp=new SalariedEmployee();
+		emp.accept();
+		emp.display();
+		emp.calTotSal();
+		
+		
+
+	}
+
+}

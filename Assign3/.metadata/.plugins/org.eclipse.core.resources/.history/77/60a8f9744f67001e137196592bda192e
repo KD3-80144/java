@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import com.rutvikjavaprograms;
+public class TestPointArray1 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		int choice;
+		Scanner sc =new Scanner(System.in);
+		do
+		{
+			
+			System.out.println("Enter the no. of points you want:");
+			int point=sc.nextInt();
+			
+			
+			
+		} while (choice!=0);
+	
+
+	}
+
+}

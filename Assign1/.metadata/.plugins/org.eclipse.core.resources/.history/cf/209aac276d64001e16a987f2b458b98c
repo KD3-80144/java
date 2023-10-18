@@ -1,0 +1,23 @@
+
+public class Star
+{
+	public static void main(String[] args)
+	{
+		int num=5;
+		int count=1;
+		for(int i=0;i<num;i++)
+         {
+			for(int k=0;k<num-1;k++)
+			{
+				System.out.print(" ");	
+			}
+			for(int j=0;j<count;j++)
+	         {
+		       System.out.print("*");
+	         }
+			System.out.println("");
+			count++;
+            }
+         	
+	}
+}

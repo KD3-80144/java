@@ -1,0 +1,9 @@
+package com.rutvikjavaprograms;
+
+public interface EmployeeInterFace 
+{
+	public void accept();
+	public void display();
+	public void calTotSal();
+
+}

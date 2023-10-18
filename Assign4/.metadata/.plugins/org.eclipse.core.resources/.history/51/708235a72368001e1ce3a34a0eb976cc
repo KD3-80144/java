@@ -1,0 +1,21 @@
+package com.app.fruits;
+
+public class Orange extends Fruits
+{
+	public String taste()
+	{
+		return "sweet and sour";
+	}
+	public void add()
+	{
+		this.add();
+		System.out.println("Press 1 if fruit is fresh otherwise press 0");
+		int check=sc.nextInt();
+		if (check==1)
+		{
+			setFresh(true);
+		}
+		else
+			setFresh(false);	
+	}
+}

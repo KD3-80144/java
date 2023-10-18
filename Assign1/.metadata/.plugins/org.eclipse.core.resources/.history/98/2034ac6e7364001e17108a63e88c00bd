@@ -1,0 +1,44 @@
+import java.util.*;
+public class Menu {
+
+	public static void main(String[] args) 
+	{
+		int choice;
+		do {
+			System.out.println("0.To Exit");
+			System.out.println("1.For dosa");
+			System.out.println("2.For Samosa");
+			System.out.println("3.For Idli");
+			System.out.println("4.For calculate Bill");
+			Scanner sc= new Scanner(System.in);
+			choice=sc.nextInt();
+			
+			switch (choice) 
+			{
+			case 1:
+				int dosaCount=0;
+				dosaCount++;
+				break;
+			case 2:
+				int samosaCount=0;
+				samosaCount++;
+				break;
+			case 3:
+				int idliCount=0;
+				idliCount++;
+				break;
+			case 4:
+				int totalBill=(dosaCount*50)+(samosaCount*30)+(idliCount*20);
+				System.out.println("Your total bill="+totalBill);
+
+			default:
+				break;
+			}
+			
+			
+			
+		} while (choice!=0);
+
+	}
+
+}

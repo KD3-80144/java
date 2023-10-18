@@ -1,0 +1,38 @@
+package com.rutvikjavaprograms;
+
+import java.util.Scanner;
+
+public class SalariedEmployee extends Employees
+{
+	private double weeklySalary;
+	Scanner sc = new Scanner(System.in);
+
+	public SalariedEmployee(double weeklySalary) 
+	{
+		super();
+		this.weeklySalary = weeklySalary;
+	}
+
+	public double getWeeklySalary() {
+		return weeklySalary;
+	}
+
+	public void setWeeklySalary(double weeklySalary) {
+		this.weeklySalary = weeklySalary;
+	}
+	public void accept()
+	{
+		System.out.println("Enter weekly salary:");
+		this.weeklySalary=sc.nextDouble();
+	}
+    public void display()
+    {
+        System.out.println("Weekly Salary:"+this.weeklySalary);
+    }
+    public void calTotSal()
+    {
+    	double totalSalary=this.weeklySalary+this.weeklySalary*1.1;
+    	System.out.println("Weekly Salary after adding reward:"+totalSalary);
+    }
+
+}

@@ -1,0 +1,22 @@
+package tester;
+import com.app.geometry.*;
+
+public class TestPoint {
+
+	public static void main(String[] args) 
+	{
+	  	Point2D p1=new Point2D(10,20);
+	  	Point2D p2=new Point2D(20,20);
+	  	boolean b=p1.equals(p2);
+	  	if (b) 
+	  	{
+			System.out.println("point p1 and p2 are located at same point!!");
+		}
+	  	else
+	  		p1.calDistance(p2);
+	  	
+	  	
+        
+	}
+
+}

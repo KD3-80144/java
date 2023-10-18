@@ -1,0 +1,63 @@
+package com.app.fruits;
+
+import java.util.Scanner;
+
+public class Fruits 
+{
+	private String color;
+	private double weight;
+	private String name;
+	private boolean isFresh;
+	public int check;
+	Scanner sc =new Scanner(System.in);
+	public Fruits() 
+	{
+
+	}
+	public Fruits(String color, double weight, String name, boolean isFresh) 
+	{
+		this.color = color;
+		this.weight = weight;
+		this.name = name;
+		this.isFresh = isFresh;
+	}
+	
+	public String taste()
+	{
+		return "No specific taste";
+	}
+	
+	
+	public String getName() 
+	{
+		return name;
+	}
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+	public boolean isFresh() 
+	{
+		return isFresh;
+	}
+	public void setFresh(boolean isFresh)
+	{
+		this.isFresh = isFresh;
+	}
+	public void add()
+	{
+		System.out.println("Enter name of fruit:");
+		this.name=sc.next();
+		System.out.println("Enter color fruit:");
+		this.color=sc.next();
+		System.out.println("Enter weight of:");
+		this.weight=sc.nextInt();
+	}
+	 public void display()
+	 {
+		 System.out.println("Fruit name:"+this.name);
+		 System.out.println("Fruit color:"+this.color);
+		 System.out.println("Fruit weight:"+this.weight);
+	 }
+
+}

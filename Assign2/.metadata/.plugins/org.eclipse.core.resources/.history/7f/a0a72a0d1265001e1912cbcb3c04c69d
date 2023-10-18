@@ -1,0 +1,74 @@
+package com.employee;
+
+import java.util.Scanner;
+
+public class Employee 
+{
+	private String firstName;
+	private String lastName;
+	private double salary;
+	Scanner sc= new Scanner(System.in);
+	
+	public Employee()
+	{
+	
+	}
+	public Employee(String firstName, String lastName, double salary) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+	}
+	public String getFirstName()
+	{
+		return firstName;
+	}
+	public void setFirstName(String firstName) 
+	{
+		this.firstName = firstName;
+	}
+	public String getLastName() 
+	{
+		return lastName;
+	}
+	public void setLastName(String lastName) 
+	{
+		this.lastName = lastName;
+	}
+	public double getSalary() 
+	{
+		return salary;
+	}
+	public void setSalary(double salary) 
+	{
+		this.salary = salary;
+	}
+	
+	public void accept()
+	{
+		System.out.println("Enter first name:");
+		firstName=sc.next();
+		System.out.println("Enter Last name:");
+		lastName=sc.next();
+		System.out.println("Enter salary:");
+		salary=sc.nextInt();
+		if(salary<0)
+		{
+			this.salary=0;
+		}
+	}
+	public void display()
+	{
+		System.out.println("first name:"+this.firstName);
+		System.out.println("Last name:"+this.lastName);
+		System.out.println("Salary:"+this.salary);
+		
+	}
+	public void incrementSalary()
+	{
+		this.salary=this.salary*1.1;
+		System.out.println("Incremented salary:"+this.salary);
+	}
+	
+
+}

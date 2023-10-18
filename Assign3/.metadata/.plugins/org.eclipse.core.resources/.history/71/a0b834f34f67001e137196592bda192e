@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import com.rutvikjavaprograms.Point2D;
+public class TestPointArray1 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		int choice;
+		Scanner sc =new Scanner(System.in);
+		do
+		{
+			System.out.println("Enter the no. of points you want:");
+			int point=sc.nextInt();
+			Point2D[] points=new Point2D[point];
+			for (int i=0;i<points.length;i++)
+			{
+				points.
+			}
+				
+		} while (choice!=0);
+	
+
+	}
+
+}
